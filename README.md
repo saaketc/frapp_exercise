@@ -35,4 +35,4 @@ body example:
 
 Response: {open: true/false}
 
-In case of circular dependency: {Error: 'Circular dependency found in tasks.'}
+In case of circular dependency: {Error: 'Cyclic dependency found in tasks. Please check tasks again.'}
