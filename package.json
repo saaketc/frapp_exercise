@@ -4,7 +4,8 @@
   "description": "This package checks circular dependency in tasks and checks if they are open to complete or not.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Saaket Kumar Chawali",
   "license": "ISC",
