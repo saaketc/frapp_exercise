@@ -3,9 +3,12 @@ const { isOpen, isCircularDependency } = require('../services/taskRouteServices'
 
 router.get('/', (req, res) => { 
     const requestBody = req.body;
+    
+    // checks for circular dependency of tasks
     if (isCircularDependency(requestBody))
         return res.status(400).send({ Error: 'Cyclic dependency found in tasks.' });
     
+    // checks task is open or not
     if (isOpen(requestBody))
         return res.status(200).send({ open: true });
     
