@@ -1,0 +1,16 @@
+{
+  "name": "frapp_exercise",
+  "version": "1.0.0",
+  "description": "This package checks circular dependency in tasks and checks if they are open to complete or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saaket Kumar Chawali",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
