@@ -29,5 +29,10 @@ body example:
 ]
 },
 
+
 "task": 1
 }
+
+Response: {open: true/false}
+
+In case of circular dependency: {Error: 'Circular depency found in tasks.'}
