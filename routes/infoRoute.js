@@ -4,7 +4,7 @@ router.get('/', (req, res) => {
     res.status(200).send(`
     <html>
     <body>
-    <h1>Welcome to frapp task api.</h1>
+    <h1>Welcome to task status checking api.</h1>
     <h3>Check whether a task is open or not and also avoid circular dependent tasks. </h3>
     <h4>Request body (JSON) example: </h4>
     <p>
