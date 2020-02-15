@@ -1,3 +1,6 @@
+
+// Assuming if a task is dependent on multiple tasks (1: [2, 3]) then all need to be completed to do that particular task (which is task no. 1 here).
+
 const router = require('express').Router();
 const { isOpen, isCircularDependency } = require('../services/taskRouteServices');
 
