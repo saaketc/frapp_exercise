@@ -3,7 +3,7 @@ const expressApp = express();
 const http = require('http');
 const server = http.createServer(expressApp);
 
-const PORT = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 //middleware routes
 const crossDomain = require('./middleware/crossDomain');
@@ -18,4 +18,4 @@ expressApp.use(express.json());
 
 expressApp.use('/api/task', taskRoute);
 
-server.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+server.listen(port, () => console.log(`Listening to port ${port}`));
