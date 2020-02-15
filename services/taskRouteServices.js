@@ -10,7 +10,7 @@ const isOpen = (requestBody) => {
         return true;
     
     for (let d of tasks[task].dependency) {
-        if (taskStatuses[d].status === 'completed')
+        if (taskStatuses[d].status.toLowerCase() === 'completed')
             openArr.push(true);
 
         else openArr.push(false);
