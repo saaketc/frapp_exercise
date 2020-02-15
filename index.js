@@ -9,6 +9,7 @@ const port = process.env.PORT || 5000;
 const crossDomain = require('./middleware/crossDomain');
 // API routes
 const taskRoute = require('./routes/taskRoute');
+const infoRoute = require('./routes/infoRoute');
 
 // for avoiding CORS
 expressApp.use(crossDomain);
@@ -17,5 +18,6 @@ expressApp.use(crossDomain);
 expressApp.use(express.json());
 
 expressApp.use('/api/task', taskRoute);
+expressApp.use('/', infoRoute);
 
 server.listen(port, () => console.log(`Listening to port ${port}`));

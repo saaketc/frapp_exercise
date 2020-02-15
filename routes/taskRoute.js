@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 
     // checks for circular dependency of tasks
     if (isCircularDependency(requestBody))
-        return res.status(400).send({ Error: 'Cyclic dependency found in tasks. Please check tasks again.' });
+        return res.status(400).send({ Error: 'Circular dependency found in tasks. Please check tasks again.' });
     
     // checks task is open or not
     if (isOpen(requestBody))
